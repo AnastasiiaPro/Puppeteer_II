@@ -38,7 +38,7 @@ describe("Application test `Let's go to the cinema`", () => {
     expect(actualBookingTickets).toContain(bookingTickets);
   });
 
-  test("Бронирование VIP места на завтра первый сеанс", async () => {    
+  test("Booking VIP seats for tomorrow's first session", async () => {    
     await clickElement(
       page,
       "body > main > section:nth-child(1) > div:nth-child(2) > ul > li:nth-child(1)"
@@ -59,7 +59,7 @@ describe("Application test `Let's go to the cinema`", () => {
   });
 });
 
-test("Нельзя купить билет на прошедший сеанс", async () => {
+test("You cannot buy a ticket for a past show", async () => {
   const position = "body > main > section:nth-child(1) > div:nth-child(2) > ul > li > a";
   expect(() =>
     clickElement(page, position).toThrowError(

@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.3.4",
+    "chai": "^4.4.1",
     "cucumber": "^7.0.0-rc.0",
     "jest-puppeteer": "^6.2.0",
     "puppeteer": "^13.7.0"
